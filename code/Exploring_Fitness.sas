@@ -1,5 +1,6 @@
+filename fit url "https://raw.githubusercontent.com/JulietAmor/Physical-Activity-and-Health/main/data/25.csv";
 data WORK.Kaggle_Fitness;
-       infile 'D:\Projects\texas_fitrness\25.csv' delimiter = ',' MISSOVER DSD lrecl=32767 firstobs=2;
+       infile fit delimiter = ',' MISSOVER DSD lrecl=32767 firstobs=2;
           informat date ANYDTDTE12. ;
           informat step_count best12. ;
           informat mood best12.;
